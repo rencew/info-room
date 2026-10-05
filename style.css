@@ -1,0 +1,891 @@
+
+/* =========================================
+   STUDENT INFORMATION FORUM
+   MAIN CSS
+========================================= */
+
+
+/* =========================================
+   BASIC RESET
+========================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background: #6c63ff;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* =========================================
+   HOME PAGE
+========================================= */
+
+.welcome {
+    background: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.welcome h2 {
+    margin-bottom: 10px;
+}
+
+.home-buttons {
+    margin-top: 25px;
+}
+
+.home-buttons a {
+    display: inline-block;
+    background: #6c63ff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.home-buttons a:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.features {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.feature {
+    flex: 1 1 200px;
+    background: #f4f7fb;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feature h3 {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================
+   LOGIN & SIGNUP
+========================================= */
+
+.signup-container,
+.login-container {
+    background: white;
+    max-width: 550px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.signup-container h2,
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   FORMS
+========================================= */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #6c63ff;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+button {
+    border: none;
+    background: #6c63ff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.signup-container a,
+.login-container a {
+    color: #6c63ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signup-container p,
+.login-container p {
+    margin-top: 15px;
+}
+
+
+/* =========================================
+   FORM NOTE
+========================================= */
+
+.form-note {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   FORUM
+========================================= */
+
+.forum-header {
+    padding-bottom: 20px;
+}
+
+.user-panel,
+.post-creator,
+.forum-area {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.user-panel a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #6c63ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* =========================================
+   FORUM POSTS
+========================================= */
+
+.post {
+    background: #f4f7fb;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.post h3 {
+    margin-bottom: 5px;
+}
+
+.post p {
+    margin-bottom: 10px;
+}
+
+.post button {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+
+/* =========================================
+   ADMIN
+========================================= */
+
+.admin-container {
+    max-width: 1100px;
+}
+
+.admin-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.admin-section h2 {
+    margin-bottom: 20px;
+}
+
+.admin-danger {
+    border: 2px solid #ff6b6b;
+}
+
+
+/* =========================================
+   ADMIN CARDS
+========================================= */
+
+.admin-card {
+    background: #f4f7fb;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.admin-card img {
+    max-width: 150px;
+    max-height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 15px 0;
+}
+
+
+/* =========================================
+   COSMETICS SHOP
+========================================= */
+
+.shop-player,
+.shop-categories,
+.cosmetics-section,
+.equipped-section {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.shop-player {
+    text-align: center;
+}
+
+.shop-categories {
+    text-align: center;
+}
+
+
+/* =========================================
+   CATEGORY BUTTONS
+========================================= */
+
+.category-button {
+    margin: 5px;
+}
+
+
+/* =========================================
+   COSMETICS GRID
+========================================= */
+
+#cosmeticsContainer {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(150px, 1fr)
+    );
+    gap: 15px;
+}
+
+
+/* =========================================
+   COSMETIC CARD
+========================================= */
+
+.cosmetic-card {
+    background: #f4f7fb;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.cosmetic-card img {
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+    max-width: 100%;
+}
+
+.cosmetic-card h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.cosmetic-card p {
+    margin: 3px 0;
+}
+
+.cosmetic-card button {
+    margin-top: 10px;
+}
+
+
+/* =========================================
+   EQUIPPED ITEMS
+========================================= */
+
+#equippedItems {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(150px, 1fr)
+    );
+    gap: 15px;
+}
+
+
+/* =========================================
+   CHARACTER AREA
+========================================= */
+
+.character-area {
+    position: relative;
+    min-height: 460px;
+    padding: 30px;
+
+    border-radius: 20px;
+
+    background: #f4f7fb;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   CHARACTER
+========================================= */
+
+.character {
+    position: relative;
+
+    width: 300px;
+    height: 400px;
+
+    margin: 20px auto;
+}
+
+
+/* =========================================
+   CHARACTER LAYERS
+========================================= */
+
+.character-layer {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 300px;
+    height: 400px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300px 400px;
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   CHARACTER LAYER ORDER
+========================================= */
+
+.character-base {
+    z-index: 1;
+}
+
+.layer-skin {
+    z-index: 2;
+}
+
+.layer-ears {
+    z-index: 3;
+}
+
+.layer-eyes {
+    z-index: 4;
+}
+
+.layer-eyebrows {
+    z-index: 5;
+}
+
+.layer-eyelashes {
+    z-index: 6;
+}
+
+.layer-nose {
+    z-index: 7;
+}
+
+.layer-mouth {
+    z-index: 8;
+}
+
+.layer-tops {
+    z-index: 9;
+}
+
+.layer-pants {
+    z-index: 10;
+}
+
+.layer-shoes {
+    z-index: 11;
+}
+
+.layer-hats {
+    z-index: 12;
+}
+
+
+/* =========================================
+   BASE CHARACTER
+========================================= */
+
+.character-base {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 300px;
+    height: 400px;
+
+    background: white;
+
+    border: 3px solid #333;
+    border-radius: 45% 45% 35% 35%;
+
+    z-index: 1;
+}
+
+
+/* =========================================
+   DESIGNER
+========================================= */
+
+#cosmeticForm {
+    max-width: 700px;
+}
+
+#designerCosmetics {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(200px, 1fr)
+    );
+    gap: 15px;
+}
+
+
+/* =========================================
+   SHOP BUTTON
+========================================= */
+
+.shop-button {
+    display: inline-block;
+
+    background: #6c63ff;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.shop-button:hover {
+    opacity: 0.85;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    color: #666;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    .signup-container,
+    .login-container {
+        padding: 20px;
+    }
+
+    .feature-list {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .character {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+
+    .character-area {
+        min-height: 420px;
+        padding: 10px;
+    }
+
+    #cosmeticsContainer,
+    #equippedItems,
+    #designerCosmetics {
+        grid-template-columns: repeat(
+            2,
+            minmax(0, 1fr)
+        );
+    }
+
+    .cosmetic-card img {
+        width: 120px;
+        height: 160px;
+    }
+
+    /* Forum mobile layout */
+
+    .speech-bubble {
+        max-width: 90%;
+        padding: 15px 18px;
+    }
+
+    .post {
+        padding: 15px 5px;
+    }
+
+    .forum-character {
+        width: 130px;
+        height: 175px;
+    }
+
+    .forum-character-body {
+        width: 130px;
+        height: 175px;
+    }
+
+    .forum-character-body .character-layer {
+        transform: scale(0.43);
+    }
+
+    .post-actions button {
+        font-size: 13px;
+        padding: 9px 12px;
+    } 
+}
+
+/* =========================================
+   FORUM SPEECH BUBBLES
+========================================= */
+
+.post {
+    position: relative;
+    background: transparent;
+    padding: 20px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+
+/* Speech bubble */
+
+.speech-bubble {
+    position: relative;
+
+    display: inline-block;
+
+    max-width: 500px;
+
+    background: white;
+
+    padding: 18px 22px;
+
+    border: 2px solid #6c63ff;
+
+    border-radius: 20px;
+
+    text-align: left;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Small bubble tail */
+
+.speech-bubble::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -14px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 0;
+
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+
+    border-top: 14px solid #6c63ff;
+}
+
+
+/* Cover the inside part of the tail */
+
+.speech-bubble::before {
+    content: "";
+
+    position: absolute;
+
+    bottom: -10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 0;
+    height: 0;
+
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+
+    border-top: 12px solid white;
+
+    z-index: 2;
+}
+
+
+/* Post author */
+
+.speech-bubble strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #6c63ff;
+}
+
+
+/* Post text */
+
+.speech-bubble p {
+    margin: 0;
+
+    word-wrap: break-word;
+}
+
+
+/* Character below bubble */
+
+.post-character {
+    margin-top: 20px;
+}
+
+
+/* Temporary character */
+
+.mini-character {
+    font-size: 60px;
+
+    line-height: 1;
+
+    margin-top: 5px;
+}
+
+
+/* Post buttons */
+
+.post-actions {
+    margin-top: 12px;
+}
+
+.post-actions button {
+    margin: 3px;
+}
+
+
+/* =========================================
+   FORUM CHARACTER
+========================================= */
+
+.forum-character {
+    width: 150px;
+    height: 200px;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+.forum-character-body {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    transform-origin: top left;
+}
+
+
+/* Scale the 300x400 character
+   down to 150x200 */
+
+.forum-character-body .character-layer {
+    transform: scale(0.5);
+    transform-origin: top left;
+}
+
+
+/* Character base */
+
+.forum-character-body .character-base {
+    width: 300px;
+    height: 400px;
+}
+
+
+/* Keep cosmetic layers aligned */
+
+.forum-character-body .character-layer {
+    width: 300px;
+    height: 400px;
+    background-size: 300px 400px;
+}

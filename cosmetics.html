@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cosmetics Shop - Student Information Forum</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="shop-header">
+
+        <h1>🎨 Cosmetics Shop</h1>
+
+        <p>Customize your character!</p>
+
+<nav>
+    <a href="forum.html">Forum</a>
+    <a href="index.html">Home</a>
+
+    <button
+        type="button"
+        onclick="logoutUser()"
+    >
+        Logout
+    </button>
+</nav>
+
+    </header>
+
+
+    <main class="shop-container">
+
+        <!-- Player Information -->
+        <section class="shop-player">
+
+            <h2>Your Character</h2>
+
+     < id="characterPreview">
+
+    <div class="character-area">
+
+        <div class="character">
+
+    <!-- Base character -->
+    <div class="character-layer character-base"></div>
+
+    <!-- Equipped cosmetics -->
+    <div id="characterLayers"></div>
+
+        </div>
+
+    </div>
+        
+</div>
+            <p>
+                Points:
+                <strong id="shopPoints">0</strong>
+            </p>
+
+        </section>
+
+
+        <!-- Shop Navigation -->
+        <section class="shop-categories">
+
+            <h2>Shop Categories</h2>
+
+            <button class="category-button" data-category="hats">
+                🎩 Hats
+            </button>
+
+            <button class="category-button" data-category="face">
+                👀 Face
+            </button>
+
+            <button class="category-button" data-category="tops">
+                👕 Tops
+            </button>
+
+            <button class="category-button" data-category="pants">
+                👖 Pants
+            </button>
+
+            <button class="category-button" data-category="shoes">
+                👟 Shoes
+            </button>
+
+            <button class="category-button" data-category="themes">
+                🌎 Themes
+            </button>
+
+        </section>
+
+
+        <!-- Cosmetics -->
+        <section class="cosmetics-section">
+
+            <h2 id="categoryTitle">
+                Cosmetics
+            </h2>
+
+            <div id="cosmeticsContainer">
+
+                <!--
+                    JavaScript will place cosmetics here.
+
+                    Example:
+
+                    [Hat Image]
+                    Cool Hat
+                    50 Points
+                    [Buy]
+
+                    [Hat Image]
+                    Halloween Hat
+                    100 Points
+                    [Buy]
+                -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Equipped Items -->
+        <section class="equipped-section">
+
+            <h2>Currently Equipped</h2>
+
+            <div id="equippedItems">
+
+                <!--
+                    JavaScript will show the user's
+                    currently equipped cosmetics here.
+                -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Student Information Forum © 2026</p>
+    </footer>
+
+
+    <!--
+        IMPORTANT:
+        No JavaScript is written inside this HTML file.
+
+        All functionality will be handled by script.js.
+    -->
+
+<script src="script.js"></script>
+  
+</body>
+</html>

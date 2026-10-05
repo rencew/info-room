@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard - Student Information Forum</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="admin-header">
+
+        <h1>Admin Dashboard</h1>
+
+        <p>Student Information Forum Management</p>
+
+        <nav>
+    <a href="forum.html">Forum</a>
+    <a href="index.html">Home</a>
+
+    <button
+        type="button"
+        onclick="logoutUser()"
+    >
+        Logout
+    </button>
+        </nav>
+
+    </header>
+
+
+    <main class="admin-container">
+
+        <!-- Pending Registrations -->
+        <section class="admin-section">
+
+            <h2>Pending Registrations</h2>
+
+            <div id="pendingAccounts">
+
+                <!--
+                    JavaScript will display pending
+                    student registrations here.
+                -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Approved Accounts -->
+        <section class="admin-section">
+
+            <h2>Approved Accounts</h2>
+
+            <div id="approvedAccounts">
+
+                <!--
+                    JavaScript will display approved
+                    accounts here.
+                -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Forum Posts -->
+        <section class="admin-section">
+
+            <h2>Forum Posts</h2>
+
+            <div id="adminPosts">
+
+                <!--
+                    JavaScript will display all posts here.
+
+                    Admin will be able to see:
+                    - Post content
+                    - Username
+                    - Whether it was anonymous
+                    - Delete button
+                -->
+
+            </div>
+
+        </section>
+
+
+        <!-- Test Data -->
+        <section class="admin-section admin-danger">
+
+            <h2>System Management</h2>
+
+            <p>
+                Use this only when testing the website.
+            </p>
+
+            <button id="clearDataButton">
+                Clear Test Data
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Student Information Forum Â© 2026</p>
+    </footer>
+
+
+    <!--
+        IMPORTANT:
+        There is NO JavaScript inside this HTML file.
+
+        All functionality will be handled by script.js.
+    -->
+
+<script src="script.js"></script>
+  
+</body>
+</html>

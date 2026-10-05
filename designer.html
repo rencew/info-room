@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cosmetics Designer - Student Forum</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Header -->
+
+    <header class="admin-header">
+
+        <h1>🎨 Cosmetics Designer</h1>
+
+        <p>Add and manage cosmetics for the student shop.</p>
+
+        <nav>
+
+    <a href="forum.html">Forum</a>
+
+    <a href="cosmetics.html">Shop</a>
+
+    <a href="admin.html">Admin</a>
+
+    <a href="index.html">Home</a>
+
+    <button
+        type="button"
+        onclick="logoutUser()"
+    >
+        Logout
+    </button>
+
+        </nav>
+
+    </header>
+
+
+    <main class="admin-container">
+
+
+        <!-- Add Cosmetic -->
+
+        <section class="admin-section">
+
+            <h2>➕ Add New Cosmetic</h2>
+
+            <form id="cosmeticForm">
+
+
+                <!-- Cosmetic Name -->
+
+                <label for="cosmeticName">
+                    Cosmetic Name
+                </label>
+
+                <input
+                    type="text"
+                    id="cosmeticName"
+                    placeholder="Example: Blue Cap"
+                    required
+                >
+
+
+                <!-- Category -->
+
+                <label for="cosmeticCategory">
+                    Category
+                </label>
+
+                <select
+                    id="cosmeticCategory"
+                    required
+                >
+
+                    <option value="">
+                        Select Category
+                    </option>
+
+                    <option value="hats">
+                        Hats
+                    </option>
+
+                    <option value="eyes">
+                        Eyes
+                    </option>
+
+                    <option value="mouth">
+                        Mouth
+                    </option>
+
+                    <option value="nose">
+                        Nose
+                    </option>
+
+                    <option value="ears">
+                        Ears
+                    </option>
+
+                    <option value="eyebrows">
+                        Eyebrows
+                    </option>
+
+                    <option value="eyelashes">
+                        Eyelashes
+                    </option>
+
+                    <option value="skin">
+                        Skin
+                    </option>
+
+                    <option value="tops">
+                        Tops
+                    </option>
+
+                    <option value="pants">
+                        Pants
+                    </option>
+
+                    <option value="shoes">
+                        Shoes
+                    </option>
+
+                    <option value="themes">
+                        Themes
+                    </option>
+
+                </select>
+
+
+                <!-- Price -->
+
+                <label for="cosmeticPrice">
+                    Price (Points)
+                </label>
+
+                <input
+                    type="number"
+                    id="cosmeticPrice"
+                    min="0"
+                    placeholder="Example: 50"
+                    required
+                >
+
+
+                <!-- Season -->
+
+                <label for="cosmeticSeason">
+                    Season / Availability
+                </label>
+
+                <select id="cosmeticSeason">
+
+                    <option value="normal">
+                        Normal
+                    </option>
+
+                    <option value="halloween">
+                        Halloween 🎃
+                    </option>
+
+                    <option value="christmas">
+                        Christmas 🎄
+                    </option>
+
+                    <option value="limited">
+                        Limited Edition ⭐
+                    </option>
+
+                </select>
+
+
+                <!-- Image -->
+
+                <label for="cosmeticImage">
+                    Cosmetic Image
+                </label>
+
+                <p class="form-note">
+
+                    Upload a PNG image with a transparent
+                    background.
+
+                    Recommended size:
+                    <strong>300 × 400 px</strong>.
+
+                </p>
+
+                <input
+                    type="file"
+                    id="cosmeticImage"
+                    accept="image/png"
+                    required
+                >
+
+
+                <!-- Submit -->
+
+                <button type="submit">
+                    Add Cosmetic
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Added Cosmetics -->
+
+        <section class="admin-section">
+
+            <h2>🛍️ Added Cosmetics</h2>
+
+            <div id="designerCosmetics">
+
+                <!--
+                    JavaScript will display cosmetics here.
+                -->
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Student Information Forum © 2026
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

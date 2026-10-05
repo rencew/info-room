@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Forum - Student Information Forum</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="forum-header">
+
+        <h1>Student Information Forum</h1>
+
+        <nav>
+    <a href="forum.html">Forum</a>
+    <a href="cosmetics.html">Shop</a>
+    <a href="index.html">Home</a>
+
+    <button
+        type="button"
+        onclick="logoutUser()"
+    >
+        Logout
+    </button>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- User Information -->
+        <section class="user-panel">
+
+            <h2>Welcome, <span id="currentUser">Student</span>!</h2>
+
+            <p>
+                Points: <strong id="userPoints">0</strong>
+            </p>
+
+            <a href="cosmetics.html">
+                Customize Character
+            </a>
+
+        </section>
+
+
+        <!-- Create Post -->
+        <section class="post-creator">
+
+            <h2>Share Something 💬</h2>
+
+            <form id="postForm">
+
+                <textarea
+                    id="postContent"
+                    placeholder="What do you want to say?"
+                    maxlength="300"
+                    required
+                ></textarea>
+
+
+                <label>
+                    <input
+                        type="checkbox"
+                        id="anonymousPost"
+                    >
+
+                    Post anonymously
+                </label>
+
+
+                <button type="submit">
+                    Post
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- Forum Characters -->
+        <section class="forum-area">
+
+            <h2>Student Forum</h2>
+
+            <div id="postContainer">
+
+                <!--
+                    JavaScript will place posts here.
+
+                    Each post will eventually look like:
+
+                    [ Speech Bubble ]
+                    "Hello everyone!"
+
+                         👀
+                       [character]
+                    -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Student Information Forum © 2026</p>
+    </footer>
+
+
+    <!--
+        IMPORTANT:
+        No JavaScript is written inside this HTML file.
+
+        We will connect everything later using script.js.
+    -->
+
+<script src="script.js"></script>
+  
+</body>
+</html>
